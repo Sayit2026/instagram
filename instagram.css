@@ -1,43 +1,21 @@
-:root{--igwhite:hsl(0,0%,100%);--igoffwhite:hsl(0,0%,98%);--iggrey:hsl(0,0%,85%);--igdarkgrey:hsl(0,0%,45%);--igblack:hsl(0,0%,15%);--igred:hsl(355,100%,60%);--igblue:hsl(204,100%,48%);--ighovergrey:hsla(0,0%,15%,0.2);--font-family-system:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
-.last{margin-bottom:8px}
-.IG-main-container--alt{font-family:var(--font-family-system);overflow-y:hidden;display:flex;width:450px;max-width:450px;height:735px;border-radius:8px;border:1px solid var(--IGgrey)}
-.IG-bg-main--alt{display:flex;flex-direction:column;width:100%;height:100%;background-color:var(--IGoffwhite)}
-.IG-header{width:100%;height:20%;max-height:20%;display:flex;align-items:center;justify-items:center}
-.HD-box-img{display:flex;justify-content:end;align-items:center;height:100%;width:27.5%}
-.HD-img-profil{width:80px;height:80px;object-fit:cover;border-radius:100%;padding:4px;background:var(--IGoffwhite)}
-.HD-box-rest{display:flex;flex-wrap:wrap;justify-content:start;align-items:start;margin-left:20px;margin-top:25px;width:70%;height:calc(100% - 25px)}
-.HD-gradient-bg{display:flex;align-items:center;justify-content:center;width:92px;height:92px;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);border-radius:100%}
-.HD-username{cursor:pointer;font-size:19.2px;font-weight:100;color:var(--IGblack);margin-right:20px}
-.HD-follow-button{cursor:pointer;padding:3px 10px;background-color:var(--IGblue);border-radius:5px;color:var(--IGwhite);font-weight:600;font-size:9.6px}
-.verif-check{width:13px;height:13px;object-fit:cover}
-.HD-first-line{display:flex;align-items:center;margin-right:10px}
-.HD-infos{display:grid;grid-template-columns:1fr 1fr 1fr;width:100%;margin-right:10px;font-size:11.2px;color:var(--IGblack)}
-.HD-descri{width:100%;text-align:left;color:var(--IGblack);line-height:100%}
-.HD-followed-by{text-align:left;margin-right:10px;line-height:100%;color:var(--IGdarkgrey);font-size:9.6px}
-igb{color:var(--IGblack);font-weight:700;cursor:pointer}
-.HL-box{overflow-x:auto;flex-wrap:nowrap;display:flex;width:calc(100% - 20px);height:calc(15% - 3px);justify-content:start;align-content:center;margin:0 10px;margin-top:-36.8px}
-.HL-cont{display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:calc(100% / 7)}
-.HL-cont-un{height:calc(35% + 20px);display:flex;align-items:end;justify-content:center}
-.HL-cont-deux{margin:3px 0;height:calc(50% - 26px)}
-.HL-bg-img{display:flex;align-items:center;justify-content:center;background:var(--IGgrey);width:50px;height:50px;border-radius:100%}
-.HL-img{cursor:pointer;width:42px;height:42px;object-fit:cover;border-radius:100%;padding:3px;background:var(--IGoffwhite)}
-.HL-titre{font-weight:700;color:var(--IGblack);font-size:9.6px;margin-top:5px;line-height:100%;height:100%;max-width:50px;overflow-y:auto}
-.HL-titre::-webkit-scrollbar,.HL-box::-webkit-scrollbar{display:none}
-.MID-nav{display:flex;justify-content:center;align-items:center;height:4%;width:100%;border-top:1px solid var(--IGgrey)}
-.MID-nav-onglet{text-transform:uppercase;font-size:8px;color:var(--IGdarkgrey);margin:0 10px}
-.icon-nav{padding-right:4px;color:var(--IGdarkgrey)}
-#nav-onglet-actif{color:var(--IGblack);font-weight:900;top:-1px}
-.MID-black-line{display:block;height:1px;background:var(--IGblack);position:relative;top:-5.5px}
-.PIC-main{margin-top:-35.2px;width:100%;overflow-x:hidden;height:450px;display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:calc(430px / 3);gap:10px;overflow-y:auto}
-.PIC-pic-cont{cursor:pointer;width:100%;height:100%}
-.PIC-pic{width:100%;height:100%;object-fit:cover;position:relative;z-index:1}
-.PIC-hover{display:flex;justify-content:center;align-items:center;position:relative;bottom:100%;z-index:0;width:100%;height:100%;background-color:var(--IGhovergrey);color:var(--IGwhite);font-weight:900;font-size:11.2px;opacity:0}
-.PIC-pic-cont:hover > .PIC-hover{opacity:1;z-index:5}
-.left-icon{padding-right:3px;color:var(--IGwhite)}
-.right-icon{padding-left:10px;padding-right:3px;color:var(--IGwhite)}
-.PIC-multi{position:relative;bottom:95%;left:40%;z-index:2;color:var(--IGwhite);font-size:16px}
-.hover-icon{bottom:calc(100% + 16px)}
-.credit{font:6.4px "Courier New";text-transform:uppercase;color:var(--IGdarkgrey);letter-spacing:1px;margin-top:5px}
-.PIC-main::-webkit-scrollbar{display:none}
-.IGblack{color:var(--IGblack)}
-.IGwhite{color:var(--IGwhite)}
+.say-insta{box-sizing:border-box;width:450px;max-width:100%;margin:20px auto;padding:30px;background:#faf6f0;border:1px solid #ece2d9;border-radius:14px;color:#54534e;font-family:'Roboto',sans-serif}
+.say-insta *,.say-insta ::before,.say-insta ::after{box-sizing:border-box}
+.say-insta-head{text-align:center}
+.say-insta-avatar{display:block;width:115px;height:115px;margin:0 auto 15px;padding:4px;object-fit:cover;border:1px solid #c78a7e;border-radius:100%;background:#faf6f0}
+.say-insta-user{display:table;margin:0 auto 17px;padding:7px 15px;background:#ece2d9;border-radius:5px;color:#b96f5e;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+.say-insta-bio{width:85%;margin:auto;color:#54534e;font-size:12px;line-height:1.7;text-align:center}
+.say-insta-stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:22px;padding:15px 0;background:#f2e8e0;border-radius:9px}
+.say-insta-stats > div{position:relative;text-align:center}
+.say-insta-stats > div:not(:last-child)::after{content:"";position:absolute;top:4px;right:0;width:1px;height:35px;background:#d9c9bd}
+.say-insta-stats b{display:block;color:#b96f5e;font-size:16px;font-weight:500;letter-spacing:1px}
+.say-insta-stats span{display:block;margin-top:3px;color:#868271;font-size:8px;letter-spacing:1.5px}
+.say-insta-separator{position:relative;height:1px;margin:25px 0;background:#d9ad9b}
+.say-insta-separator span{position:absolute;top:-1px;left:50%;width:45px;height:3px;background:#b96f5e;border-radius:5px;transform:translateX(-50%)}
+.say-insta-feed{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.say-insta-feed img{display:block;width:100%;aspect-ratio:1 / 1;object-fit:cover;border-radius:3px}
+@media (max-width: 600px) {
+.say-insta{width:100%;padding:20px 15px}
+.say-insta-avatar{width:95px;height:95px}
+.say-insta-bio{width:95%}
+.say-insta-feed{gap:4px}
+}
