@@ -43,7 +43,7 @@
     width: 110px;
     height: 110px;
 
-    margin: 0 auto 15px auto;
+    margin: 0 auto 15px;
     padding: 4px;
 
     object-fit: cover;
@@ -59,7 +59,7 @@
 .say-insta .say-insta-user {
     display: inline-block;
 
-    margin: 0 auto 16px auto;
+    margin: 0 auto 16px;
     padding: 7px 14px;
 
     background-color: #f2e8e0;
@@ -102,12 +102,11 @@
 
     width: 100%;
 
-    margin: 22px 0 0 0;
-    padding: 14px 0;
+    margin: 25px 0 0;
+    padding: 16px 0;
 
-    background-color: #faf7f4;
-    border: 1px solid #eee4dc;
-    border-radius: 8px;
+    border-top: 1px solid #ece2d9;
+    border-bottom: 1px solid #ece2d9;
 }
 
 .say-insta .say-insta-stat {
@@ -121,64 +120,91 @@
 }
 
 .say-insta .say-insta-stat + .say-insta-stat {
-    border-left: 1px solid #e4d3c9;
+    border-left: 1px solid #ece2d9;
 }
+
+
+/* NOMBRE */
 
 .say-insta .say-insta-number {
     display: block;
 
-    margin-bottom: 4px;
+    margin: 0 0 4px;
 
     color: #b96f5e;
 
     font-size: 15px;
     font-weight: 600;
-    line-height: 17px;
+    line-height: 18px;
 }
+
+
+/* INTITULÉ */
 
 .say-insta .say-insta-label {
     display: block;
+
+    margin: 0;
 
     color: #868271;
 
     font-size: 8px;
     line-height: 11px;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
 }
 
 
 /* ==============================================
-   SÉPARATEUR
+   BARRE PUBLICATIONS
    ============================================== */
 
-.say-insta .say-insta-divider {
-    display: block;
+.say-insta .say-insta-feedbar {
+    display: flex;
 
     width: 100%;
-    height: 1px;
 
-    margin: 25px 0;
+    margin: 22px 0 18px;
 
-    background-color: #ece2d9;
+    align-items: center;
 }
 
-.say-insta .say-insta-divider-mark {
+
+/* LIGNES DE CHAQUE CÔTÉ */
+
+.say-insta .say-insta-feedbar::before,
+.say-insta .say-insta-feedbar::after {
+    content: "";
+
+    display: block;
+    flex: 1;
+
+    height: 1px;
+
+    background-color: #e4d3c9;
+}
+
+
+/* TITRE PUBLICATIONS */
+
+.say-insta .say-insta-feedtitle {
     display: block;
 
-    width: 35px;
-    height: 2px;
+    margin: 0;
+    padding: 0 14px;
 
-    margin: 0 auto;
+    color: #b96f5e;
 
-    background-color: #c78a7e;
-
-    transform: translateY(-1px);
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 
 /* ==============================================
-   FEED
+   GRILLE DES PUBLICATIONS
    ============================================== */
 
 .say-insta .say-insta-feed {
@@ -194,12 +220,10 @@
 }
 
 
-/* CASE DU FEED */
+/* CASE PHOTO */
 
 .say-insta .say-insta-photo {
     display: block;
-
-    position: relative;
 
     width: 100%;
     height: 125px;
@@ -214,7 +238,7 @@
 }
 
 
-/* IMAGE DU FEED */
+/* IMAGE */
 
 .say-insta .say-insta-photo img {
     display: block;
