@@ -1,4 +1,4 @@
-.say-insta{box-sizing:border-box;width:450px;max-width:100%;margin:20px auto;padding:30px;background:#ffffff;border:1px solid #ece2d9;border-radius:14px;color:#54534e;font-family:'Roboto',sans-serif}
+.say-insta{box-sizing:border-box;width:450px;max-width:100%;margin:20px auto;padding:30px;background:#ffffff !important;border:1px solid #ece2d9;border-radius:14px;color:#54534e;font-family:'Roboto',sans-serif}
 .say-insta *,.say-insta ::before,.say-insta ::after{box-sizing:border-box}
 .say-insta-head{text-align:center}
 .say-insta-avatar{display:block;width:115px;height:115px;margin:0 auto 15px;padding:4px;object-fit:cover;border:1px solid #c78a7e;border-radius:100%;background:#faf6f0}
