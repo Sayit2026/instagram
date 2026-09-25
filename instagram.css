@@ -1,21 +1,220 @@
-.say-insta{box-sizing:border-box;width:450px;max-width:100%;margin:20px auto;padding:30px;background:#ffffff;border:1px solid #ece2d9;border-radius:14px;color:#54534e;font-family:'Roboto',sans-serif}
-.say-insta *,.say-insta ::before,.say-insta ::after{box-sizing:border-box}
-.say-insta-head{text-align:center}
-.say-insta-avatar{display:block;width:115px;height:115px;margin:0 auto 15px;padding:4px;object-fit:cover;border:1px solid #c78a7e;border-radius:100%;background:#faf6f0}
-.say-insta-user{display:table;margin:0 auto 17px;padding:7px 15px;background:#ece2d9;border-radius:5px;color:#b96f5e;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
-.say-insta-bio{width:85%;margin:auto;color:#54534e;font-size:12px;line-height:1.7;text-align:center}
-.say-insta-stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:22px;padding:15px 0;background:#f2e8e0;border-radius:9px}
-.say-insta-stats > div{position:relative;text-align:center}
-.say-insta-stats > div:not(:last-child)::after{content:"";position:absolute;top:4px;right:0;width:1px;height:35px;background:#d9c9bd}
-.say-insta-stats b{display:block;color:#b96f5e;font-size:16px;font-weight:500;letter-spacing:1px}
-.say-insta-stats span{display:block;margin-top:3px;color:#868271;font-size:8px;letter-spacing:1.5px}
-.say-insta-separator{position:relative;height:1px;margin:25px 0;background:#d9ad9b}
-.say-insta-separator span{position:absolute;top:-1px;left:50%;width:45px;height:3px;background:#b96f5e;border-radius:5px;transform:translateX(-50%)}
-.say-insta-feed{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
-.say-insta-feed img{display:block;width:100%;aspect-ratio:1 / 1;object-fit:cover;border-radius:3px}
+/* ========================================
+   SAY IT — SOCIAL PROFILE
+   ======================================== */
+
+.say-insta {
+    box-sizing: border-box;
+    width: 450px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+
+    background: #ffffff;
+    border: 1px solid #ece2d9;
+    border-radius: 14px;
+
+    color: #54534e;
+    font-family: 'Roboto', sans-serif;
+}
+
+.say-insta *,
+.say-insta *::before,
+.say-insta *::after {
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   HEADER
+   ======================================== */
+
+.say-insta-head {
+    text-align: center;
+}
+
+
+/* AVATAR */
+
+.say-insta-avatar {
+    display: block;
+
+    width: 115px;
+    height: 115px;
+
+    margin: 0 auto 15px;
+    padding: 4px;
+
+    object-fit: cover;
+
+    background: #ffffff;
+    border: 2px solid #c78a7e;
+    border-radius: 100%;
+}
+
+
+/* USERNAME */
+
+.say-insta-user {
+    display: table;
+
+    margin: 0 auto 18px;
+    padding: 7px 15px;
+
+    background: #f2e8e0;
+    border-radius: 5px;
+
+    color: #b96f5e;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+/* BIO */
+
+.say-insta-bio {
+    width: 85%;
+    margin: 0 auto;
+
+    color: #54534e;
+
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+
+/* ========================================
+   STATISTIQUES
+   ======================================== */
+
+.say-insta-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-top: 22px;
+    padding: 15px 0;
+
+    background: #faf7f4;
+    border: 1px solid #f1e9e3;
+    border-radius: 9px;
+}
+
+.say-insta-stats > div {
+    position: relative;
+    text-align: center;
+}
+
+.say-insta-stats > div:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    right: 0;
+
+    width: 1px;
+    height: 35px;
+
+    background: #e4d3c9;
+}
+
+.say-insta-stats b {
+    display: block;
+
+    color: #b96f5e;
+
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.say-insta-stats span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #868271;
+
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   SÉPARATEUR
+   ======================================== */
+
+.say-insta-separator {
+    position: relative;
+
+    height: 1px;
+    margin: 25px 0;
+
+    background: #e6c8bc;
+}
+
+.say-insta-separator span {
+    position: absolute;
+
+    top: -1px;
+    left: 50%;
+
+    width: 45px;
+    height: 3px;
+
+    background: #c78a7e;
+    border-radius: 5px;
+
+    transform: translateX(-50%);
+}
+
+
+/* ========================================
+   FEED
+   ======================================== */
+
+.say-insta-feed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+}
+
+.say-insta-feed img {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 3px;
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
 @media (max-width: 600px) {
-.say-insta{width:100%;padding:20px 15px}
-.say-insta-avatar{width:95px;height:95px}
-.say-insta-bio{width:95%}
-.say-insta-feed{gap:4px}
+
+    .say-insta {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .say-insta-avatar {
+        width: 95px;
+        height: 95px;
+    }
+
+    .say-insta-bio {
+        width: 95%;
+    }
+
+    .say-insta-feed {
+        gap: 4px;
+    }
 }
