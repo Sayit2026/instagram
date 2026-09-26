@@ -19,3 +19,361 @@
 .say-insta-bio{width:95%}
 .say-insta-feed{gap:4px}
 }
+
+
+
+/* =========================================================
+   SAY IT — INSTAGRAM / NOUVEAU POST
+   ========================================================= */
+
+
+/* CONTENEUR */
+
+.say-igpost {
+    box-sizing: border-box;
+    display: block;
+
+    width: 450px;
+    max-width: 100%;
+
+    margin: 20px auto;
+
+    background: #ffffff;
+    border: 1px solid #ece2d9;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    color: #54534e;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.say-igpost-head {
+    box-sizing: border-box;
+    display: flex;
+
+    width: 100%;
+    padding: 14px 16px;
+
+    align-items: center;
+}
+
+
+/* AVATAR */
+
+.say-igpost-avatar-ring {
+    box-sizing: border-box;
+    display: flex;
+
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    border: 2px solid #b96f5e;
+    border-radius: 50%;
+}
+
+.say-igpost-avatar {
+    display: block;
+
+    width: 40px;
+    height: 40px;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: cover;
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+
+/* INFOS */
+
+.say-igpost-info {
+    display: block;
+
+    margin-left: 12px;
+
+    text-align: left;
+}
+
+
+/* PSEUDO */
+
+.say-igpost-user {
+    display: block;
+
+    color: #b96f5e;
+
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+
+/* LOCALISATION */
+
+.say-igpost-location {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #9a9189;
+
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: .7px;
+}
+
+
+/* PETITS POINTS */
+
+.say-igpost-more {
+    display: block;
+
+    margin-left: auto;
+
+    color: #b96f5e;
+
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   PHOTO
+   ========================================================= */
+
+.say-igpost-photo {
+    display: block;
+
+    width: calc(100% - 30px);
+    height: 418px;
+
+    margin: 0 15px;
+    padding: 0;
+
+    background-color: #f5f0ec;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 3px;
+}
+
+
+/* =========================================================
+   BAS DU POST
+   ========================================================= */
+
+.say-igpost-bottom {
+    box-sizing: border-box;
+
+    width: 100%;
+
+    padding: 12px 17px 18px;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.say-igpost-actions {
+    display: flex;
+
+    width: 100%;
+    height: 24px;
+
+    margin: 0 0 13px;
+
+    align-items: center;
+}
+
+
+/* COEUR */
+
+.say-igpost-heart {
+    position: relative;
+
+    display: block;
+
+    width: 22px;
+    height: 20px;
+
+    margin-right: 17px;
+}
+
+
+/* CRÉATION DU COEUR */
+
+.say-igpost-heart::before {
+    content: "♥";
+
+    position: absolute;
+    top: -5px;
+    left: 0;
+
+    color: #c5725d;
+
+    font-size: 25px;
+    line-height: 25px;
+}
+
+
+/* BULLE DE MESSAGE */
+
+.say-igpost-bubble {
+    position: relative;
+
+    box-sizing: border-box;
+    display: block;
+
+    width: 21px;
+    height: 18px;
+
+    border: 2px solid #c5725d;
+    border-radius: 50%;
+}
+
+
+/* PETITE POINTE DE LA BULLE */
+
+.say-igpost-bubble::after {
+    content: "";
+
+    position: absolute;
+
+    right: -2px;
+    bottom: -4px;
+
+    width: 6px;
+    height: 6px;
+
+    background: #ffffff;
+
+    border-right: 2px solid #c5725d;
+
+    transform: rotate(35deg);
+}
+
+
+/* PETIT TRAIT À DROITE */
+
+.say-igpost-action-mark {
+    display: block;
+
+    width: 40px;
+    height: 4px;
+
+    margin-left: auto;
+
+    background: #c78a7e;
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   LIKES
+   ========================================================= */
+
+.say-igpost-likes {
+    display: block;
+
+    margin: 0 0 12px;
+
+    color: #45433f;
+
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: .3px;
+}
+
+
+/* =========================================================
+   LÉGENDE
+   ========================================================= */
+
+.say-igpost-caption {
+    display: block;
+
+    margin: 0;
+
+    color: #54534e;
+
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: .2px;
+}
+
+
+/* PSEUDO DANS LA LÉGENDE */
+
+.say-igpost-caption-user {
+    display: inline;
+
+    margin-right: 6px;
+
+    color: #b96f5e;
+
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+
+/* =========================================================
+   DATE
+   ========================================================= */
+
+.say-igpost-date {
+    display: block;
+
+    margin-top: 17px;
+
+    color: #aaa098;
+
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media screen and (max-width: 500px) {
+
+    .say-igpost {
+        width: 100%;
+    }
+
+    .say-igpost-photo {
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+}
