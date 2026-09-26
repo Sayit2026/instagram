@@ -227,7 +227,7 @@
 /* CRÉATION DU COEUR */
 
 .say-igpost-heart::before {
-    content: "♥";
+    content: "❤";
 
     position: absolute;
     top: -5px;
