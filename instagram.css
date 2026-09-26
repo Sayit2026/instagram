@@ -430,3 +430,20 @@
     }
 
 }
+
+
+/* COMMENTAIRE */
+
+.say-igcomment-text {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #54534e;
+
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 15px;
+}
+
